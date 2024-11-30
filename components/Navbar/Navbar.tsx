@@ -1,6 +1,7 @@
-
 "use client";
 import React, { useState } from "react";
+import Image from 'next/image';
+import logoImage from "../../img/makegreatboxlogo.png";
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -13,7 +14,22 @@ const Navbar: React.FC = () => {
     <nav className="bg-gray-800 p-4">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
+          {/* Navbar Main Title */}
+
+
+        
+
           {/* Mobile Menu Button */}
+          <div className="flex items-center justify-between w-full px-4 ms-8">
+          <Image 
+            src={logoImage}
+            alt="Responsive Logo"
+            width={200} // Set a fixed width
+            height={100}
+            className="h-auto w-10%"  // Maintain aspect ratio
+          />
+
+          </div>
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <button
               onClick={toggleMenu}
@@ -42,35 +58,32 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Navbar Links for Desktop */}
-          <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-            <div className="flex-shrink-0 text-white text-xl">My Web App</div>
-            <div className="hidden sm:block sm:ml-6">
-              <div className="flex space-x-4">
-                <a
-                  href="/"
-                  className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Home
-                </a>
-                <a
-                  href="/about"
-                  className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  About
-                </a>
-                <a
-                  href="/services"
-                  className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Services
-                </a>
-                <a
-                  href="/contact"
-                  className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Contact
-                </a>
-              </div>
+          <div className="hidden sm:block sm:ml-auto">
+            <div className="flex space-x-4">
+              <a
+                href="/"
+                className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+              >
+                Home
+              </a>
+              <a
+                href="/about"
+                className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+              >
+                About
+              </a>
+              <a
+                href="/services"
+                className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+              >
+                Services
+              </a>
+              <a
+                href="/contact"
+                className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+              >
+                Contact
+              </a>
             </div>
           </div>
         </div>
