@@ -64,25 +64,26 @@ const Navbar: React.FC = () => {
                 href="/"
                 className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
               >
+                <i className="fa-solid fa-house"></i>
                 Home
               </a>
               <a
-                href="/about"
+                href="/controls"
                 className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
               >
-                About
+                Controls
               </a>
               <a
-                href="/services"
+                href="/settings"
                 className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
               >
-                Services
+                Settings
               </a>
               <a
-                href="/contact"
+                href="/about_us"
                 className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
               >
-                Contact
+                AboutUs
               </a>
             </div>
           </div>
