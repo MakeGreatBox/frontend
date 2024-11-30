@@ -1,6 +1,8 @@
 
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
+import TimeGraph from "@/components/TimeGraph/TimeGraph";
+import Cards from "@/components/TimeGraph/Cards";
 
 const Page: React.FC = () => {
   return (
@@ -9,9 +11,9 @@ const Page: React.FC = () => {
       <Navbar />
 
       {/* Page Content */}
-      <div className="content">
-        <h1>Welcome to My Web App</h1>
-        <p>This is the homepage!</p>
+      <div className="bg-gray-100 min-h-screen">
+      <TimeGraph />
+      <Cards/>
       </div>
     </div>
   );
