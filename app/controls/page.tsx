@@ -2,6 +2,7 @@
 import Navbar from "@/components/Navbar/Navbar";
 import SlideButton from "@/components/slideButton/slideButton";
 import ClickButton from "@/components/clickButton/clickButton";
+import Slide from "@/components/forwardsBackwardsSlide/forwardsBackwardsSlide";
 
 export default function Controls() {
   const handleClick = () => {
@@ -29,7 +30,7 @@ export default function Controls() {
           <div className="flex flex-col items-center p-4 md:p-6 rounded-lg shadow-md w-full sm:w-auto text-center">
             <div className="flex items-center">
               <span className="text-black mr-4">Forwards</span>
-              <SlideButton />
+              <Slide />
               <span className="text-black ml-4">Backwards</span>
             </div>
           </div>

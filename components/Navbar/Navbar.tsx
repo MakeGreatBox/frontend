@@ -80,6 +80,12 @@ const Navbar: React.FC = () => {
                 Settings
               </a>
               <a
+                href="/historial"
+                className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
+              >
+                Historial
+              </a>
+              <a
                 href="/about_us"
                 className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
               >
@@ -103,22 +109,28 @@ const Navbar: React.FC = () => {
             Home
           </a>
           <a
-            href="/about"
+            href="/controls"
             className="text-white block px-3 py-2 rounded-md text-base font-medium"
           >
-            About
+            Controls
           </a>
           <a
-            href="/services"
+            href="/settings"
             className="text-white block px-3 py-2 rounded-md text-base font-medium"
           >
-            Services
+            Settings
           </a>
           <a
-            href="/contact"
+            href="/settings"
             className="text-white block px-3 py-2 rounded-md text-base font-medium"
           >
-            Contact
+            Historial
+          </a>
+          <a
+            href="/about_us"
+            className="text-white block px-3 py-2 rounded-md text-base font-medium"
+          >
+            AboutUs
           </a>
         </div>
       </div>

@@ -1,5 +1,5 @@
 // components/ClickButton.tsx
-"use client"; // Required for client-side interactivity
+"use client"; // Marks this component as a Client Component
 import React from "react";
 
 type ClickButtonProps = {

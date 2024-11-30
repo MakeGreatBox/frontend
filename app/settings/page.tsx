@@ -1,5 +1,9 @@
+import Navbar from "@/components/Navbar/Navbar"
+
 export default function drttingd(){
     return(
-        <h1>tets</h1>
+        <div>
+            <Navbar/>
+        </div>
     )
 }
