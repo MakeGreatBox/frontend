@@ -58,8 +58,8 @@ const Page: React.FC = () => {
                 </div>
                 ))}
             </div>
-         
-            <div className="flex flex-col justify-end text-center">
+          
+            <div className="flex flex-col justify-end text-center mt-8">
                 <p className="text-black">We’re excited to share our project. Feel free to take a look!</p>
                 <a href="https://github.com/MakeGreatBox" className="text-center text-blue-600">Check out in GitHub!</a>
             </div>
