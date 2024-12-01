@@ -73,12 +73,7 @@ const Navbar: React.FC = () => {
               >
                 Controls
               </a>
-              <a
-                href="/settings"
-                className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
-              >
-                Settings
-              </a>
+
               <a
                 href="/historial"
                 className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
@@ -115,13 +110,7 @@ const Navbar: React.FC = () => {
             Controls
           </a>
           <a
-            href="/settings"
-            className="text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Settings
-          </a>
-          <a
-            href="/settings"
+            href="/historial"
             className="text-white block px-3 py-2 rounded-md text-base font-medium"
           >
             Historial
