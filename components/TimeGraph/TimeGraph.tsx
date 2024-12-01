@@ -27,7 +27,6 @@ const TimeGraph: React.FC = () => {
           labels: data.labels,  // Access the labels from the imported JSON
           datasets: [
             {
-              label: 'Time Series Data',
               data: data.values,  // Access the values from the imported JSON
               borderColor: 'rgb(75, 192, 192)',
               backgroundColor: 'rgba(75, 192, 192, 0.2)',
@@ -66,7 +65,7 @@ const TimeGraph: React.FC = () => {
 
   return (
     <div className="p-10">
-      <h1 className="text-3xl font-bold mb-6 text-center">Time Series Graph</h1>
+      <h1 className="text-3xl text-black font-bold mb-6 text-center">Dashboard</h1>
       <div className="max-w-3xl mx-auto">
         <canvas ref={chartRef}></canvas>
       </div>
