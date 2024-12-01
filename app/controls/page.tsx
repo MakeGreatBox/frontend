@@ -27,15 +27,6 @@ export default function Controls() {
               <span className="text-black ml-4">On</span>
             </div>
           </div>
-          {/* SlideButton: Forwards/Backwards */}
-          <div className="flex flex-col items-center p-4 md:p-6 rounded-lg shadow-md w-full sm:w-auto text-center">
-            <div className="flex items-center">
-              <span className="text-black mr-4">Forwards</span>
-              <Slide/>
-              <span className="text-black ml-4 ">Backwards</span>
-            </div>
-        
-          </div>
           <div className="flex flex-col items-center p-4 md:p-6 rounded-lg shadow-md w-full sm:w-auto text-center">
             <div className="flex items-center">
           <Slider /> {/* Add Slider */}

@@ -10,12 +10,12 @@ const Slider: React.FC = () => {
   };
 
   return (
-    <div className="flex items-center space-x-4 w-full">
+    <div className="flex items-center space-x-4 w-full h-10">
       <span className="text-black">{value}</span>
       <input
         type="range"
         min="1"
-        max="5"
+        max="3"
         value={value}
         onChange={handleChange}
         className="w-80 h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer h-max" // Adjust width here
